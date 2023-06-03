@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/imgs/Favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/keyframes.css">
+    <title>Imports Unlimited</title>
+</head>
+<body>
+    
+    <!--Aside -->
+    <aside>
+        <span class="logo">
+            <img src="assets/imgs/logo.svg" alt="Logo">
+        </span>
+        <div class="menu">
+            <a href="#inicio">Inicio</a>
+            <a href="#catalogo">Catálogo</a>
+            <a href="#reserva">Reservación</a>
+            <a href="#sociales">Redes</a>
+        </div>
+    </aside>
+
+    <!--Filter -->
+    
+    <section id="catalogo" class="filter">
+        <label for="search">Filtrar por:</label>
+        <select name="search" id="list">
+            <option value="brand">Marca</option>
+            <option value="price">Modelo</option>
+        </select>
+    </section>
+
+    <!-- Home -->
+
+    <section class="home">
+        <a id="inicio"></a>
+        <div class="text-2">
+            <h3>Bienvenidos a <b>Imports Unlimited</b></h3>
+            <p>Concesionario de alta gama</p>
+            <p>Compra y venta de vehiculos de lujo</p>
+        </div>
+    </section>
+
+    <!-- Cards -->
+
+    <main>
+
+        <div class="content">
+
+            <!-- Mobile -->
+            
+            <article class="card">
+                <span>
+                    <img class="image" src="assets/imgs/ferrari-488-pista.png" alt="ferrari-488-pista">
+                </span>
+                <p>Ferrari 488 Pista</p>
+                <button>Ver más</button>
+            </article>
+            
+            <!-- Table -->
+            
+            <article class="card-2">
+                <span>
+                    <img class="image" src="assets/imgs/lamborghini-performante.png" alt="lamborghini-performante">
+                </span>
+                <p>Lamborghini Performante</p>
+                <button>Ver más</button>
+            </article>
+
+             <!-- Desktop -->
+            
+            <article class="card-3">
+                <span>
+                    <img class="image" src="assets/imgs/mercedes-amg.png" alt="mercedes-amg">
+                </span>
+                <p>Mercedes Benz GTR</p>
+                <button>Ver más</button>
+            </article>
+            
+            <article class="card-3">
+                <span>
+                    <img class="image" src="assets/imgs/porsche-991.png" alt="porsche-991">
+                </span>
+                <p>Porsche 991 S</p>
+                <button>Ver más</button>
+            </article>
+            
+            <article class="card-3">
+                <span>
+                    <img class="image" src="assets/imgs/aston-martin.png" alt="aston-martin">
+                </span>
+                <p>Aston Martin Vantage</p>
+                <button>Ver más</button>
+            </article>
+            
+            <article class="card-3">
+                <span>
+                    <img class="image" src="assets/imgs/audi-r8.png" alt="audi-r8">
+                </span>
+                <p>Audi R8</p>
+                <button>Ver más</button>
+            </article>
+            
+            <article class="card-3">
+                <span>
+                    <img class="image" src="assets/imgs/Corvette-Stingray.png" alt="Corvette-Stingray">
+                </span>
+                <p>Corvette Stingray C7</p>
+                <button>Ver más</button>
+            </article>
+            
+            <article class="card-3">
+                <span>
+                    <img class="image" src="assets/imgs/mclaren-p1.png" alt="mclaren-p1">
+                </span>
+                <p>McLaren P1</p>
+                <button>Ver más</button>
+            </article>
+
+        <!-- pagination -->
+
+        </div>
+            <div class="pagination">
+            <a href="#" class="active">1</a>
+            <a href="#" class="inactive">2</a>
+            <a href="#" class="inactive">3</a>
+        </div>
+
+    </main>
+    
+    <!-- Agendamiendo -->
+
+    <section id="reserva">
+        <form action="#" method="post">
+            
+            <div class="contact">
+                <h4>¿Deseas agendar una visita?</h4>
+                <p>Recuerda que puedes realizar una prueba de manejo en cualquiera de nuestros vehículos para que disfrutes una experiencia única</p>
+            </div>
+                
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="user_name">
+            
+            <label for="mail">Correo electrónico:</label>
+            <input type="email" id="mail" name="user_mail">   
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <!-- Footer -->
+    
+    <footer id="sociales">
+        <p><b>Imports Unlimited</b></p>
+        <div>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <span class="text">Copyright ©️ Todos los derechos reservados</span>
+    </footer>
+   
+    <script src="https://kit.fontawesome.com/bdfbf6e3f1.js" crossorigin="anonymous"></script>
+</body>
+</html>

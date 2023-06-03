@@ -1,0 +1,344 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    "aside"
+    "home"
+    "filter"
+    "main"
+    "form"
+    "footer";
+    grid-template-rows: 8% 30% 8% auto auto 10%;
+}
+
+aside {
+    background-color: rgb(62, 62, 62);
+    color: rgb(194, 194, 194);
+    grid-area: aside;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem;
+}
+
+.logo {
+    padding-top: 1rem;
+}
+
+.menu a:hover {
+    background-color: rgb(217, 217, 217);
+    color: rgb(62, 62, 62);
+    border-radius: 1rem;
+    transition: 0.2s;
+}
+
+.menu a {
+   padding: 0rem .3rem;
+}
+
+aside a {
+    text-decoration: none;
+    color: rgb(194, 194, 194);
+}
+
+span img {
+    width: 8rem;
+}
+
+.home {
+    background-image: url(../imgs/Local.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: home;
+    display: flex;
+    justify-content: center;
+}
+
+.text-2 {
+    color: rgb(194, 194, 194);
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.filter {
+    background-color: rgb(158, 158, 158);
+    grid-area: filter;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.3rem;
+}
+
+select {
+    width: 70%;
+    padding: 0.2rem;
+    border-radius: 0.5rem;
+}
+
+main {
+    background-color: rgb(217, 217, 217);
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+article p {
+    text-align: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    overflow: hidden;
+    transition: 0.6s;
+}
+
+.image {
+    width: 15rem;
+    height: 9rem;
+    filter: grayscale(100%);
+    transition: .5s ease;
+    cursor: pointer;
+
+}
+
+.image:hover {
+    transform: scale(1.2);
+    filter: grayscale(0%);
+    transition: 1s ease;
+}
+
+article:hover {
+    border-radius: 1rem;
+    box-shadow: rgba(154, 0, 0, 0.338) 0px 5px 10px 0px;
+}
+
+button {
+    border: solid rgb(134, 134, 134);
+    background-color: rgb(217, 217, 217);
+    width: 6rem;
+    margin-top: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.card-2 {
+    display: none;
+}
+
+.card-3 {
+    display: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.pagination a {
+    padding: 0.5rem 0.7rem;
+    margin: 0.2rem;
+    text-decoration: none;
+    border: solid rgb(0, 0, 0) 0.1rem;
+    border-radius: 2rem;
+    font-size: small;
+    color:rgb(0, 0, 0)
+}
+
+.inactive:hover {
+    background-color: rgb(158, 158, 158);
+    color: rgb(255, 255, 255);
+    transition: 0.4s;
+}
+
+.active {
+    background-color:  rgb(62, 62, 62);
+    color: rgb(255, 255, 255) !important;
+}
+
+form {
+    background-color: rgb(217, 217, 217);
+    background-image: url(../imgs/test-drive.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(194, 194, 194);
+    grid-area: form;
+    padding: 1rem 0;
+}
+
+.contact {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+input {
+    border-radius: 1rem;
+    margin: .5rem;
+}
+
+footer {
+    background-color: rgb(62, 62, 62);
+    color: rgb(194, 194, 194);
+    grid-area: footer;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer i {
+    cursor: pointer;
+}
+
+@media (min-width: 576px) {
+    
+    body {
+        grid-template-areas: 
+        "aside aside"
+        "filter home"
+        "filter main"
+        "filter form"
+        "footer footer";
+        grid-template-columns:16% 84%;
+        grid-template-rows: 8% 30% auto auto 10%;
+    }
+
+    .icons {
+        display: none;
+    }
+
+    select {
+        width: 90%;
+    }
+
+    .text {
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 35%;
+    }
+
+    .card-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        width: 35%;
+        overflow: hidden;
+        transition: 0.6s;
+    }
+
+    .contact {
+        padding: 0 1rem 0.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+    
+    body {
+        grid-template-areas: 
+        "aside home"
+        "aside filter"
+        "aside main"
+        "aside form"
+        "footer footer";
+        grid-template-columns:13% 87%;
+        grid-template-rows: 30% 8% auto auto 10%;
+    }
+
+    aside {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .logo {
+        padding-left: 1.1rem;
+        position: sticky;
+        position: -webkit-sticky;
+        top: 0%;
+    }
+
+    .menu {
+        position: sticky;
+        position: -webkit-sticky;
+        top: 33%;
+    }
+    
+    .icons {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu a {
+        line-height: 1.8rem;
+    }
+
+    span img {
+        width: 13rem;
+    }
+
+    .text {
+        text-align: center;
+        justify-content: space-around;
+    }
+
+    .content {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 22%;
+    }
+
+    .card-2 {
+        width: 22%;
+    }
+
+    .card-3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0.5rem;
+        width: 22%;
+        overflow: hidden;
+        transition: 0.6s;
+    }
+}
