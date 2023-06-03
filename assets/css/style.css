@@ -183,7 +183,7 @@ form {
     align-items: center;
     color: rgb(194, 194, 194);
     grid-area: form;
-    padding: 1rem 0;
+    padding: 1rem;
 }
 
 .contact {
