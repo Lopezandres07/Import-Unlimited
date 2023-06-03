@@ -42,7 +42,7 @@ aside {
 }
 
 .menu a {
-   padding: 0rem .3rem;
+   padding: 0rem .2rem;
 }
 
 aside a {
@@ -219,7 +219,7 @@ footer i {
         "filter form"
         "footer footer";
         grid-template-columns:16% 84%;
-        grid-template-rows: 8% 30% auto auto 10%;
+        grid-template-rows: 15% 30% auto auto auto;
     }
 
     .icons {
